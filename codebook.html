@@ -1,0 +1,604 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style>
+html, body { background-color: white; }
+table { border-collapse:collapse; border:none; }
+.thead { border-bottom:double; font-style:italic; font-weight:normal; padding:0.2cm; text-align:left; vertical-align:top; }
+.tdata { padding:0.2cm; text-align:left; vertical-align:top; }
+.arc { background-color:#eeeeee }
+caption { font-weight: bold; text-align:left; }
+.omit { color:#999999; }
+</style>
+</head>
+<body>
+<table>
+<caption>Data frame: df</caption>
+<tr>
+<th class="thead">Name</th><th class="thead">Label</th><th class="thead">missings</th><th class="thead">Values</th><th class="thead">Value Labels</th><th class="thead">Freq.</th><th class="thead">%</th>
+</tr>
+<tr>
+<td class="tdata">CASE</td>
+<td class="tdata">Interview-Nummer (fortlaufend)</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata" colspan="2"><em>range: 136-628</em></td>
+<td class="tdata"></td>
+<td class="tdata"></td>
+</tr>
+<tr>
+<td class="tdata arc">polint</td>
+<td class="tdata arc">Politisches Interesse</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">&uuml;berhaupt nicht<br>weniger stark<br>mittelm&auml;&szlig;ig<br>stark<br>sehr stark</td>
+<td class="tdata arc">6<br>32<br>85<br>98<br>41</td>
+<td class="tdata arc">2.29<br>12.21<br>32.44<br>37.40<br>15.65</td>
+</tr>
+<tr>
+<td class="tdata">feel_01</td>
+<td class="tdata">True National/Feeling Issues: ... in Deutschland<br>geboren zu sein.</td>
+<td class="tdata">2 (0.76%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">131<br>71<br>23<br>26<br>9</td>
+<td class="tdata">50.38<br>27.31<br>8.85<br>10.00<br>3.46</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_02</td>
+<td class="tdata arc">True National/Feeling Issues: ... die gemeinsame<br>deutsche Geschichte zu teilen.</td>
+<td class="tdata arc">18 (6.87%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">53<br>69<br>59<br>45<br>18</td>
+<td class="tdata arc">21.72<br>28.28<br>24.18<br>18.44<br>7.38</td>
+</tr>
+<tr>
+<td class="tdata">feel_03</td>
+<td class="tdata">True National/Feeling Issues: ... deutsche<br>Vorfahren zu haben.</td>
+<td class="tdata">4 (1.53%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">151<br>55<br>29<br>17<br>6</td>
+<td class="tdata">58.53<br>21.32<br>11.24<br>6.59<br>2.33</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_04</td>
+<td class="tdata arc">True National/Feeling Issues: ... die durch die<br>Verfassung garantierten Rechte zu achten.</td>
+<td class="tdata arc">1 (0.38%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">3<br>3<br>6<br>72<br>177</td>
+<td class="tdata arc">1.15<br>1.15<br>2.30<br>27.59<br>67.82</td>
+</tr>
+<tr>
+<td class="tdata">feel_05</td>
+<td class="tdata">True National/Feeling Issues: ... typisch deutsche<br>Werte zu teilen.</td>
+<td class="tdata">4 (1.53%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">49<br>54<br>64<br>74<br>17</td>
+<td class="tdata">18.99<br>20.93<br>24.81<br>28.68<br>6.59</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_06</td>
+<td class="tdata arc">True National/Feeling Issues: ... Christ/Christin<br>zu sein.</td>
+<td class="tdata arc">3 (1.15%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">183<br>38<br>21<br>16<br>1</td>
+<td class="tdata arc">70.66<br>14.67<br>8.11<br>6.18<br>0.39</td>
+</tr>
+<tr>
+<td class="tdata">feel_07</td>
+<td class="tdata">True National/Feeling Issues: ... die deutsche<br>Sprache im Alltag zu sprechen.</td>
+<td class="tdata">3 (1.15%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">9<br>21<br>20<br>136<br>73</td>
+<td class="tdata">3.47<br>8.11<br>7.72<br>52.51<br>28.19</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_08</td>
+<td class="tdata arc">True National/Feeling Issues: ... die deutschen<br>politischen Institutionen achten.</td>
+<td class="tdata arc">6 (2.29%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">6<br>11<br>22<br>118<br>99</td>
+<td class="tdata arc">2.34<br>4.30<br>8.59<br>46.09<br>38.67</td>
+</tr>
+<tr>
+<td class="tdata">feel_09</td>
+<td class="tdata">True National/Feeling Issues: ... einen Beitrag<br>zur St&auml;rkung der deutschen Wirtschaft zu leisten.</td>
+<td class="tdata">2 (0.76%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">46<br>43<br>55<br>82<br>34</td>
+<td class="tdata">17.69<br>16.54<br>21.15<br>31.54<br>13.08</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_10</td>
+<td class="tdata arc">True National/Feeling Issues: ... nach der<br>deutschen Lebensart und -weise zu leben.</td>
+<td class="tdata arc">6 (2.29%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">53<br>72<br>58<br>56<br>17</td>
+<td class="tdata arc">20.70<br>28.12<br>22.66<br>21.88<br>6.64</td>
+</tr>
+<tr>
+<td class="tdata">feel_11</td>
+<td class="tdata">True National/Feeling Issues: ... Steuerabgaben zu<br>leisten.</td>
+<td class="tdata">6 (2.29%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">43<br>27<br>40<br>96<br>50</td>
+<td class="tdata">16.80<br>10.55<br>15.62<br>37.50<br>19.53</td>
+</tr>
+<tr>
+<td class="tdata arc">feel_12</td>
+<td class="tdata arc">True National/Feeling Issues: ... bei<br>internationalen Sportveranstaltungen f&uuml;r<br>Deutschland zu sein.</td>
+<td class="tdata arc">1 (0.38%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">140<br>50<br>35<br>34<br>2</td>
+<td class="tdata arc">53.64<br>19.16<br>13.41<br>13.03<br>0.77</td>
+</tr>
+<tr>
+<td class="tdata">feel_13</td>
+<td class="tdata">True National/Feeling Issues: ... die deutschen<br>Gesetze zu achten.</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">4<br>5<br>6<br>91<br>156</td>
+<td class="tdata">1.53<br>1.91<br>2.29<br>34.73<br>59.54</td>
+</tr>
+<tr>
+<td class="tdata arc">patr_01</td>
+<td class="tdata arc">Patriotismus: Ich m&ouml;chte lieber ein B&uuml;rger/eine<br>B&uuml;rgerin Deutschlands als irgendeines anderen<br>Landes auf der Welt sein.</td>
+<td class="tdata arc">5 (1.91%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">20<br>41<br>62<br>99<br>35</td>
+<td class="tdata arc">7.78<br>15.95<br>24.12<br>38.52<br>13.62</td>
+</tr>
+<tr>
+<td class="tdata">patr_02</td>
+<td class="tdata">Patriotismus: Es gibt einige Dinge im heutigen<br>Deutschland, derentwegen ich mich f&uuml;r Deutschland<br>sch&auml;me.</td>
+<td class="tdata">8 (3.05%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme voll und ganz zu<br>stimme eher zu<br>weder noch<br>stimme eher nicht zu<br>stimme &uuml;berhaupt nicht zu</td>
+<td class="tdata">78<br>112<br>25<br>30<br>9</td>
+<td class="tdata">30.71<br>44.09<br>9.84<br>11.81<br>3.54</td>
+</tr>
+<tr>
+<td class="tdata arc">patr_03</td>
+<td class="tdata arc">Patriotismus: Die Welt w&auml;re besser, wenn die<br>Menschen in anderen L&auml;ndern eher so w&auml;ren wie die<br>Deutschen.</td>
+<td class="tdata arc">8 (3.05%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">62<br>77<br>73<br>35<br>7</td>
+<td class="tdata arc">24.41<br>30.31<br>28.74<br>13.78<br>2.76</td>
+</tr>
+<tr>
+<td class="tdata">patr_04</td>
+<td class="tdata">Patriotismus: Im Gro&szlig;en und Ganzen ist Deutschland<br>ein besseres Land als die meisten anderen L&auml;nder</td>
+<td class="tdata">4 (1.53%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">17<br>23<br>74<br>115<br>29</td>
+<td class="tdata">6.59<br>8.91<br>28.68<br>44.57<br>11.24</td>
+</tr>
+<tr>
+<td class="tdata arc">patr_05</td>
+<td class="tdata arc">Patriotismus: Jeder sollte sein Land unterst&uuml;tzen,<br>selbst wenn sich das Land im Unrecht befindet.</td>
+<td class="tdata arc">5 (1.91%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">151<br>80<br>14<br>11<br>1</td>
+<td class="tdata arc">58.75<br>31.13<br>5.45<br>4.28<br>0.39</td>
+</tr>
+<tr>
+<td class="tdata">patr_06</td>
+<td class="tdata">Patriotismus: Wenn mein Land Erfolg im<br>internationalen Sport hat, macht mich das stolz,<br>ein Deutscher/eine Deutsche zu sein.</td>
+<td class="tdata">3 (1.15%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">71<br>54<br>45<br>69<br>20</td>
+<td class="tdata">27.41<br>20.85<br>17.37<br>26.64<br>7.72</td>
+</tr>
+<tr>
+<td class="tdata arc">dem</td>
+<td class="tdata arc">Demokratiezufriedenheit</td>
+<td class="tdata arc">10 (3.82%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4</td>
+<td class="tdata arc">sehr unzufrieden<br>eher unzufrieden<br>eher zufrieden<br>sehr zufrieden</td>
+<td class="tdata arc">5<br>36<br>175<br>36</td>
+<td class="tdata arc">1.98<br>14.29<br>69.44<br>14.29</td>
+</tr>
+<tr>
+<td class="tdata">bwahl</td>
+<td class="tdata">Sonntagsfrage</td>
+<td class="tdata">31 (11.83%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9</td>
+<td class="tdata">CDU/CSU<br>SPD<br>AfD<br>FDP<br>Die Linke<br>B&uuml;ndnis 90/Die Gr&uuml;nen<br>Andere<br>W&uuml;rde nicht w&auml;hlen<br>Nicht wahlberechtigt,da keine deutsche Staatsb&uuml;rgerschaft</td>
+<td class="tdata">27<br>18<br>10<br>27<br>21<br>106<br>12<br>7<br>3</td>
+<td class="tdata">11.69<br>7.79<br>4.33<br>11.69<br>9.09<br>45.89<br>5.19<br>3.03<br>1.30</td>
+</tr>
+<tr>
+<td class="tdata arc">depr</td>
+<td class="tdata arc">relative Deprivation</td>
+<td class="tdata arc">45 (17.18%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">mehr als gerechten Anteil<br>etwas mehr als gerechten Anteil<br>den gerechten Anteil<br>etwas weniger als gerechten Anteil<br>weniger als gerechten Anteil</td>
+<td class="tdata arc">10<br>38<br>113<br>42<br>14</td>
+<td class="tdata arc">4.61<br>17.51<br>52.07<br>19.35<br>6.45</td>
+</tr>
+<tr>
+<td class="tdata">ausoz_01</td>
+<td class="tdata">Autoritarismus/sozialliberale Werte: Unruhestifter<br>sollten deutlich zu sp&uuml;ren bekommen, dass sie in<br>der Gesellschaft unerw&uuml;nscht sind.</td>
+<td class="tdata">19 (7.25%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">12<br>53<br>61<br>85<br>32</td>
+<td class="tdata">4.94<br>21.81<br>25.10<br>34.98<br>13.17</td>
+</tr>
+<tr>
+<td class="tdata arc">ausoz_02</td>
+<td class="tdata arc">Autoritarismus/sozialliberale Werte: Wir brauchen<br>starke F&uuml;hrungspersonen, damit wir in der<br>Gesellschaft sicher leben k&ouml;nnen.</td>
+<td class="tdata arc">7 (2.67%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">27<br>58<br>46<br>93<br>31</td>
+<td class="tdata arc">10.59<br>22.75<br>18.04<br>36.47<br>12.16</td>
+</tr>
+<tr>
+<td class="tdata">ausoz_03</td>
+<td class="tdata">Autoritarismus/sozialliberale Werte: Traditionen<br>sollten unbedingt gepflegt und aufrechterhalten<br>werden.</td>
+<td class="tdata">3 (1.15%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">20<br>42<br>81<br>98<br>18</td>
+<td class="tdata">7.72<br>16.22<br>31.27<br>37.84<br>6.95</td>
+</tr>
+<tr>
+<td class="tdata arc">ausoz_04</td>
+<td class="tdata arc">Autoritarismus/sozialliberale Werte: Menschen<br>sollten wichtige Entscheidungen in der<br>Gesellschaft F&uuml;hrungspersonen &uuml;berlassen.</td>
+<td class="tdata arc">5 (1.91%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">54<br>101<br>62<br>33<br>7</td>
+<td class="tdata arc">21.01<br>39.30<br>24.12<br>12.84<br>2.72</td>
+</tr>
+<tr>
+<td class="tdata">ausoz_05</td>
+<td class="tdata">Autoritarismus/sozialliberale Werte: Gegen<br>Au&szlig;enseiter und Nichtstuer sollte in der<br>Gesellschaft mit aller H&auml;rte vorgegangen werden.</td>
+<td class="tdata">9 (3.44%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">88<br>86<br>47<br>21<br>11</td>
+<td class="tdata">34.78<br>33.99<br>18.58<br>8.30<br>4.35</td>
+</tr>
+<tr>
+<td class="tdata arc">ausoz_06</td>
+<td class="tdata arc">Autoritarismus/sozialliberale Werte: Bew&auml;hrte<br>Verhaltensweisen sollten nicht in Frage gestellt<br>werden.</td>
+<td class="tdata arc">5 (1.91%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">109<br>91<br>33<br>21<br>3</td>
+<td class="tdata arc">42.41<br>35.41<br>12.84<br>8.17<br>1.17</td>
+</tr>
+<tr>
+<td class="tdata">ausoz_07</td>
+<td class="tdata">Autoritarismus/sozialliberale Werte:<br>Gleichgeschlechtliche Paare sind genauso gute<br>Eltern wie andere Paare.</td>
+<td class="tdata">8 (3.05%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme voll und ganz zu<br>stimme eher zu<br>weder noch<br>stimme eher nicht zu<br>stimme &uuml;berhaupt nicht zu</td>
+<td class="tdata">173<br>39<br>17<br>17<br>8</td>
+<td class="tdata">68.11<br>15.35<br>6.69<br>6.69<br>3.15</td>
+</tr>
+<tr>
+<td class="tdata arc">ausoz_08</td>
+<td class="tdata arc">Autoritarismus/sozialliberale Werte: Abtreibungen<br>sollten gesetzlich verboten sein.</td>
+<td class="tdata arc">3 (1.15%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">213<br>27<br>7<br>5<br>7</td>
+<td class="tdata arc">82.24<br>10.42<br>2.70<br>1.93<br>2.70</td>
+</tr>
+<tr>
+<td class="tdata">ausoz_09</td>
+<td class="tdata">Autoritarismus/sozialliberale Werte: Im<br>Allgemeinen haben M&auml;nner bessere<br>F&uuml;hrungsqualit&auml;ten.</td>
+<td class="tdata">5 (1.91%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">172<br>43<br>26<br>12<br>4</td>
+<td class="tdata">66.93<br>16.73<br>10.12<br>4.67<br>1.56</td>
+</tr>
+<tr>
+<td class="tdata arc">ausoz_10</td>
+<td class="tdata arc">Autoritarismus/sozialliberale Werte: Frauen<br>sollten bei gleicher Eignung bei<br>Bewerbungsverfahren bevorzugt behandelt werden.</td>
+<td class="tdata arc">1 (0.38%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme voll und ganz zu<br>stimme eher zu<br>weder noch<br>stimme eher nicht zu<br>stimme &uuml;berhaupt nicht zu</td>
+<td class="tdata arc">13<br>40<br>68<br>61<br>79</td>
+<td class="tdata arc">4.98<br>15.33<br>26.05<br>23.37<br>30.27</td>
+</tr>
+<tr>
+<td class="tdata">xeno_01</td>
+<td class="tdata">Xenophobie: Die in Deutschland lebenden Ausl&auml;nder<br>sollten ihren Lebensstil besser an den der<br>Deutschen anpassen.</td>
+<td class="tdata">3 (1.15%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">31<br>70<br>75<br>68<br>15</td>
+<td class="tdata">11.97<br>27.03<br>28.96<br>26.25<br>5.79</td>
+</tr>
+<tr>
+<td class="tdata arc">xeno_02</td>
+<td class="tdata arc">Xenophobie: Ausl&auml;nder nehmen Deutschen die<br>Arbeitspl&auml;tze weg.</td>
+<td class="tdata arc">3 (1.15%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">195<br>46<br>15<br>2<br>1</td>
+<td class="tdata arc">75.29<br>17.76<br>5.79<br>0.77<br>0.39</td>
+</tr>
+<tr>
+<td class="tdata">xeno_03</td>
+<td class="tdata">Xenophobie: Ausl&auml;nder versch&auml;rfen die<br>Kriminalit&auml;tsprobleme.</td>
+<td class="tdata">9 (3.44%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">75<br>58<br>45<br>62<br>13</td>
+<td class="tdata">29.64<br>22.92<br>17.79<br>24.51<br>5.14</td>
+</tr>
+<tr>
+<td class="tdata arc">xeno_04</td>
+<td class="tdata arc">Xenophobie: Ausl&auml;nder belasten das deutsche<br>Sozialsystem.</td>
+<td class="tdata arc">8 (3.05%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">77<br>70<br>41<br>53<br>13</td>
+<td class="tdata arc">30.31<br>27.56<br>16.14<br>20.87<br>5.12</td>
+</tr>
+<tr>
+<td class="tdata">xeno_05</td>
+<td class="tdata">Xenophobie: Die Anwesenheit der Ausl&auml;nder in<br>Deutschland f&uuml;hrt dazu, dass der gesellschaftliche<br>Zusammenhalt verloren geht.</td>
+<td class="tdata">4 (1.53%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">111<br>79<br>30<br>32<br>6</td>
+<td class="tdata">43.02<br>30.62<br>11.63<br>12.40<br>2.33</td>
+</tr>
+<tr>
+<td class="tdata arc">xeno_06</td>
+<td class="tdata arc">Xenophobie: Die vielen ausl&auml;ndischen Kinder in der<br>Schule verhindern eine gute Ausbildung der<br>deutschen Kinder.</td>
+<td class="tdata arc">8 (3.05%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata arc">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata arc">135<br>61<br>25<br>23<br>10</td>
+<td class="tdata arc">53.15<br>24.02<br>9.84<br>9.06<br>3.94</td>
+</tr>
+<tr>
+<td class="tdata">xeno_07</td>
+<td class="tdata">Xenophobie: Durch die vielen Ausl&auml;nder in<br>Deutschland f&uuml;hlt man sich zunehmend als Fremder<br>im eigenen Land.</td>
+<td class="tdata">3 (1.15%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">stimme &uuml;berhaupt nicht zu<br>stimme eher nicht zu<br>weder noch<br>stimme eher zu<br>stimme voll und ganz zu</td>
+<td class="tdata">143<br>58<br>24<br>24<br>10</td>
+<td class="tdata">55.21<br>22.39<br>9.27<br>9.27<br>3.86</td>
+</tr>
+<tr>
+<td class="tdata arc">lr</td>
+<td class="tdata arc">LR-Selbsteinstufung</td>
+<td class="tdata arc">13 (4.96%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</td>
+<td class="tdata arc">links [1]<br>[2]<br>[3]<br>[4]<br>[5]<br>[6]<br>[7]<br>[8]<br>[9]<br>rechts [10]</td>
+<td class="tdata arc">6<br>26<br>80<br>43<br>33<br>30<br>21<br>7<br>2<br>1</td>
+<td class="tdata arc">2.41<br>10.44<br>32.13<br>17.27<br>13.25<br>12.05<br>8.43<br>2.81<br>0.80<br>0.40</td>
+</tr>
+<tr>
+<td class="tdata">sex</td>
+<td class="tdata">Geschlecht</td>
+<td class="tdata">1 (0.38%)</td>
+<td class="tdata">1<br>2<br>3</td>
+<td class="tdata">weiblich<br>m&auml;nnlich<br>divers</td>
+<td class="tdata">129<br>130<br>2</td>
+<td class="tdata">49.43<br>49.81<br>0.77</td>
+</tr>
+<tr>
+<td class="tdata arc">bun</td>
+<td class="tdata arc">Bundesland aufgewachsen</td>
+<td class="tdata arc">4 (1.53%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br><span class="omit">&lt;...&gt;</span></td>
+<td class="tdata arc">Baden-W&uuml;rttemberg<br>Bayern<br>Berlin<br>Brandenburg<br>Bremen<br>Hamburg<br>Hessen<br>Mecklenburg-Vorpommern<br>Niedersachsen<br>Nordrhein-Westfalen<br>Rheinland-Pfalz<br>Saarland<br>Sachsen<br>Sachsen-Anhalt<br>Schleswig-Holstein<br><span class="omit">&lt;... truncated&gt;</span></td>
+<td class="tdata arc">30<br>14<br>1<br>0<br>2<br>2<br>73<br>0<br>22<br>35<br>56<br>1<br>4<br>0<br>0</td>
+<td class="tdata arc">11.63<br>5.43<br>0.39<br>0.00<br>0.78<br>0.78<br>28.29<br>0.00<br>8.53<br>13.57<br>21.71<br>0.39<br>1.55<br>0.00<br>0.00</td>
+</tr>
+<tr>
+<td class="tdata">wohngr</td>
+<td class="tdata">Wohnortgr&ouml;&szlig;e</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2<br>3<br>4</td>
+<td class="tdata">L&auml;ndliche Gegend oder Dorf (bis 5.000 Einwohner)<br>Kleinstadt (bis 20.000 Einwohner)<br>Mittelgro&szlig;e Stadt (bis 100.000 Einwohner)<br>Gro&szlig;stadt (&uuml;ber 100.000 Einwohner)</td>
+<td class="tdata">57<br>34<br>115<br>56</td>
+<td class="tdata">21.76<br>12.98<br>43.89<br>21.37</td>
+</tr>
+<tr>
+<td class="tdata arc">educ</td>
+<td class="tdata arc">Schulabschluss</td>
+<td class="tdata arc">3 (1.15%)</td>
+<td class="tdata arc">1<br>3<br>5<br>6<br>7<br>8</td>
+<td class="tdata arc">Noch Sch&uuml;ler<br>Hauptschulabschluss<br>Mittlere Reife<br>Realschulabschluss<br>Fachholschulreife<br>Abitur</td>
+<td class="tdata arc">3<br>4<br>8<br>9<br>29<br>206</td>
+<td class="tdata arc">1.16<br>1.54<br>3.09<br>3.47<br>11.20<br>79.54</td>
+</tr>
+<tr>
+<td class="tdata">reli</td>
+<td class="tdata">Religiosit&auml;t</td>
+<td class="tdata">2 (0.76%)</td>
+<td class="tdata">1<br>2<br>3<br>4<br>5</td>
+<td class="tdata">&uuml;berhaupt nicht religi&ouml;s [1]<br>[2]<br>[3]<br>[4]<br>sehr religi&ouml;s [5]</td>
+<td class="tdata">124<br>45<br>45<br>37<br>9</td>
+<td class="tdata">47.69<br>17.31<br>17.31<br>14.23<br>3.46</td>
+</tr>
+<tr>
+<td class="tdata arc">mhin</td>
+<td class="tdata arc">Migrationshintergrund</td>
+<td class="tdata arc">2 (0.76%)</td>
+<td class="tdata arc">1<br>2<br>3</td>
+<td class="tdata arc">Beide Eltern hatten die deutsche Staatsangeh&ouml;rigkeit<br>Ein Elternteil hatte die deutsche Staatsangeh&ouml;rigkeit<br>Kein Elternteil hatte die deutsche Staatsangeh&ouml;rigkeit</td>
+<td class="tdata arc">219<br>27<br>14</td>
+<td class="tdata arc">84.23<br>10.38<br>5.38</td>
+</tr>
+<tr>
+<td class="tdata">zuge</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: Ausweichoption (negativ)<br>oder Anzahl ausgew&auml;hlter Optionen</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">-2<br>-1</td>
+<td class="tdata">wei&szlig; nicht<br>keine Angabe</td>
+<td class="tdata">2<br>8</td>
+<td class="tdata">0.76<br>3.05</td>
+</tr>
+<tr>
+<td class="tdata arc">zuge_01</td>
+<td class="tdata arc">Zugeh&ouml;rigkeitsgef&uuml;hl: Deutschen</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2</td>
+<td class="tdata arc">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata arc">34<br>228</td>
+<td class="tdata arc">12.98<br>87.02</td>
+</tr>
+<tr>
+<td class="tdata">zuge_02</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: T&uuml;rken</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2</td>
+<td class="tdata">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata">256<br>6</td>
+<td class="tdata">97.71<br>2.29</td>
+</tr>
+<tr>
+<td class="tdata arc">zuge_03</td>
+<td class="tdata arc">Zugeh&ouml;rigkeitsgef&uuml;hl: Syrer</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2</td>
+<td class="tdata arc">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata arc">258<br>4</td>
+<td class="tdata arc">98.47<br>1.53</td>
+</tr>
+<tr>
+<td class="tdata">zuge_04</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: Russen</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2</td>
+<td class="tdata">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata">258<br>4</td>
+<td class="tdata">98.47<br>1.53</td>
+</tr>
+<tr>
+<td class="tdata arc">zuge_05</td>
+<td class="tdata arc">Zugeh&ouml;rigkeitsgef&uuml;hl: Polen</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2</td>
+<td class="tdata arc">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata arc">258<br>4</td>
+<td class="tdata arc">98.47<br>1.53</td>
+</tr>
+<tr>
+<td class="tdata">zuge_06</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: Rum&auml;nen</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2</td>
+<td class="tdata">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata">259<br>3</td>
+<td class="tdata">98.85<br>1.15</td>
+</tr>
+<tr>
+<td class="tdata arc">zuge_07</td>
+<td class="tdata arc">Zugeh&ouml;rigkeitsgef&uuml;hl: Italienern</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2</td>
+<td class="tdata arc">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata arc">256<br>6</td>
+<td class="tdata arc">97.71<br>2.29</td>
+</tr>
+<tr>
+<td class="tdata">zuge_08</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: Ich f&uuml;hle mich keiner<br>Bev&ouml;lkerungsgruppe zugeh&ouml;rig</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">1<br>2</td>
+<td class="tdata">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata">242<br>20</td>
+<td class="tdata">92.37<br>7.63</td>
+</tr>
+<tr>
+<td class="tdata arc">zuge_09</td>
+<td class="tdata arc">Zugeh&ouml;rigkeitsgef&uuml;hl: Andere, und zwar</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1<br>2</td>
+<td class="tdata arc">nicht gew&auml;hlt<br>ausgew&auml;hlt</td>
+<td class="tdata arc">238<br>24</td>
+<td class="tdata arc">90.84<br>9.16</td>
+</tr>
+<tr>
+<td class="tdata">zuge_09a</td>
+<td class="tdata">Zugeh&ouml;rigkeitsgef&uuml;hl: Andere, und zwar (offene<br>Eingabe)</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata"></td>
+<td class="tdata"></td>
+<td class="tdata"><span class="omit" title ="'show.string.values = TRUE' to show values.">&lt;output omitted&gt;</span></td>
+<td class="tdata"><span class="omit" title ="'show.string.values = TRUE' to show values.">&lt;output omitted&gt;</span></td>
+</tr>
+<tr>
+<td class="tdata arc">inc</td>
+<td class="tdata arc">Netto-Einkommen-Haushalt</td>
+<td class="tdata arc">14 (5.34%)</td>
+<td class="tdata arc">1<br>2<br>3<br>4<br>5<br>6</td>
+<td class="tdata arc">unter 1500 Euro<br>1500 bis unter 2500 Euro<br>2500 bis unter 3500 Euro<br>3500 bis unter 5000 Euro<br>&uuml;ber 5000 Euro<br>keine Angabe</td>
+<td class="tdata arc">68<br>44<br>34<br>42<br>40<br>20</td>
+<td class="tdata arc">27.42<br>17.74<br>13.71<br>16.94<br>16.13<br>8.06</td>
+</tr>
+<tr>
+<td class="tdata">age</td>
+<td class="tdata">Alter in Jahren</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata" colspan="2"><em>range: 18-72</em></td>
+<td class="tdata"></td>
+<td class="tdata"></td>
+</tr>
+<tr>
+<td class="tdata arc">SD15</td>
+<td class="tdata arc">Einverst&auml;ndniserkl&auml;rung</td>
+<td class="tdata arc">0 (0.00%)</td>
+<td class="tdata arc">1</td>
+<td class="tdata arc">Ich best&auml;tige, dass ich die Informationen zur Umfrage gelesen und verstanden habe.</td>
+<td class="tdata arc">262</td>
+<td class="tdata arc">100.00</td>
+</tr>
+<tr>
+<td class="tdata">frame</td>
+<td class="tdata">Frame</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">0<br>1</td>
+<td class="tdata">nicht erhalten<br>erhalten</td>
+<td class="tdata">122<br>140</td>
+<td class="tdata">46.56<br>53.44</td>
+</tr>
+<tr>
+<td class="tdata arc">TIME005</td>
+<td class="tdata arc">Verweildauer Seite 5</td>
+<td class="tdata arc">122 (46.56%)</td>
+<td class="tdata arc" colspan="2"><em>range: 3-21141</em></td>
+<td class="tdata arc"></td>
+<td class="tdata arc"></td>
+</tr>
+<tr>
+<td class="tdata">dropout</td>
+<td class="tdata">Wurde die Befragung abgeschlossen (letzte Seite<br>erreicht)?</td>
+<td class="tdata">0 (0.00%)</td>
+<td class="tdata">0<br>1</td>
+<td class="tdata">abgebrochen<br>ausgef&uuml;llt</td>
+<td class="tdata">3<br>259</td>
+<td class="tdata">1.15<br>98.85</td>
+</tr>
+
+</table>
+</body></html>
